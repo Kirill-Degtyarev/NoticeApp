@@ -1,0 +1,15 @@
+{
+  "main.css": "/notice-app/static/css/main.fc14a93b.chunk.css",
+  "main.js": "/notice-app/static/js/main.1908b727.chunk.js",
+  "main.js.map": "/notice-app/static/js/main.1908b727.chunk.js.map",
+  "static/js/1.67d90fa3.chunk.js": "/notice-app/static/js/1.67d90fa3.chunk.js",
+  "static/js/1.67d90fa3.chunk.js.map": "/notice-app/static/js/1.67d90fa3.chunk.js.map",
+  "runtime~main.js": "/notice-app/static/js/runtime~main.ccdbbf5f.js",
+  "runtime~main.js.map": "/notice-app/static/js/runtime~main.ccdbbf5f.js.map",
+  "static/media/LoginBody.module.css": "/notice-app/static/media/google-icon.29d446d5.svg",
+  "static/media/fonts.css": "/notice-app/static/media/proxima_nova_regular.91c478ab.svg",
+  "static/css/main.fc14a93b.chunk.css.map": "/notice-app/static/css/main.fc14a93b.chunk.css.map",
+  "index.html": "/notice-app/index.html",
+  "precache-manifest.b35fdce96347a8445bd609e23284ab89.js": "/notice-app/precache-manifest.b35fdce96347a8445bd609e23284ab89.js",
+  "service-worker.js": "/notice-app/service-worker.js"
+}
