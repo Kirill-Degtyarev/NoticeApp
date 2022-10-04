@@ -1,15 +1,15 @@
 {
   "main.css": "./static/css/main.b970036e.chunk.css",
-  "main.js": "./static/js/main.1293dde2.chunk.js",
-  "main.js.map": "./static/js/main.1293dde2.chunk.js.map",
-  "static/js/1.5890aebe.chunk.js": "./static/js/1.5890aebe.chunk.js",
-  "static/js/1.5890aebe.chunk.js.map": "./static/js/1.5890aebe.chunk.js.map",
+  "main.js": "./static/js/main.7198315d.chunk.js",
+  "main.js.map": "./static/js/main.7198315d.chunk.js.map",
+  "static/js/1.b74a3926.chunk.js": "./static/js/1.b74a3926.chunk.js",
+  "static/js/1.b74a3926.chunk.js.map": "./static/js/1.b74a3926.chunk.js.map",
   "runtime~main.js": "./static/js/runtime~main.4a686d48.js",
   "runtime~main.js.map": "./static/js/runtime~main.4a686d48.js.map",
   "static/media/LoginBody.module.css": "./static/media/google-icon.29d446d5.svg",
-  "static/media/fonts.css": "./static/media/proxima_nova_regular.b7c51278.eot",
+  "static/media/fonts.css": "./static/media/proxima_nova_regular.91c478ab.svg",
   "static/css/main.b970036e.chunk.css.map": "./static/css/main.b970036e.chunk.css.map",
   "index.html": "./index.html",
-  "precache-manifest.cf019842d3f324034eed06ec5a23d359.js": "./precache-manifest.cf019842d3f324034eed06ec5a23d359.js",
+  "precache-manifest.85cd25f4174839573ea1857b50ec223d.js": "./precache-manifest.85cd25f4174839573ea1857b50ec223d.js",
   "service-worker.js": "./service-worker.js"
 }
