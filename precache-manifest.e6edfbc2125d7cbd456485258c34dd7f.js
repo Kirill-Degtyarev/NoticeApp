@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "7198315deabb94b7fb11",
+    "revision": "8a03ba53a6b10fa2b774",
     "url": "./static/css/main.b970036e.chunk.css"
   },
   {
-    "revision": "7198315deabb94b7fb11",
-    "url": "./static/js/main.7198315d.chunk.js"
+    "revision": "8a03ba53a6b10fa2b774",
+    "url": "./static/js/main.8a03ba53.chunk.js"
   },
   {
     "revision": "b74a39260c5aa1450e0e",
@@ -48,19 +48,19 @@ self.__precacheManifest = [
     "url": "./static/media/proxima_nova_regular.13ac2738.woff2"
   },
   {
-    "revision": "61571ff74cc0fba6de49ace74846bfec",
-    "url": "./static/media/proxima_nova_regular.61571ff7.woff"
-  },
-  {
     "revision": "7ce6760d17685c466ba04d1b2c63c38b",
     "url": "./static/media/proxima_nova_regular.7ce6760d.ttf"
+  },
+  {
+    "revision": "61571ff74cc0fba6de49ace74846bfec",
+    "url": "./static/media/proxima_nova_regular.61571ff7.woff"
   },
   {
     "revision": "91c478abc3c2b0ee83469d351b30393b",
     "url": "./static/media/proxima_nova_regular.91c478ab.svg"
   },
   {
-    "revision": "3ee023669429c3e92762e8cfebdb19cb",
+    "revision": "19b704fa14d21c680025c1aa9835bf72",
     "url": "./index.html"
   }
 ];
