@@ -1,15 +1,15 @@
 {
-  "main.css": "/notice-app/static/css/main.fc14a93b.chunk.css",
-  "main.js": "/notice-app/static/js/main.1908b727.chunk.js",
-  "main.js.map": "/notice-app/static/js/main.1908b727.chunk.js.map",
-  "static/js/1.67d90fa3.chunk.js": "/notice-app/static/js/1.67d90fa3.chunk.js",
-  "static/js/1.67d90fa3.chunk.js.map": "/notice-app/static/js/1.67d90fa3.chunk.js.map",
-  "runtime~main.js": "/notice-app/static/js/runtime~main.ccdbbf5f.js",
-  "runtime~main.js.map": "/notice-app/static/js/runtime~main.ccdbbf5f.js.map",
-  "static/media/LoginBody.module.css": "/notice-app/static/media/google-icon.29d446d5.svg",
-  "static/media/fonts.css": "/notice-app/static/media/proxima_nova_regular.91c478ab.svg",
-  "static/css/main.fc14a93b.chunk.css.map": "/notice-app/static/css/main.fc14a93b.chunk.css.map",
-  "index.html": "/notice-app/index.html",
-  "precache-manifest.63af5179a1982517129a27a5ef062526.js": "/notice-app/precache-manifest.63af5179a1982517129a27a5ef062526.js",
-  "service-worker.js": "/notice-app/service-worker.js"
+  "main.css": "/static/css/main.305cd4ef.chunk.css",
+  "main.js": "/static/js/main.150b4c6e.chunk.js",
+  "main.js.map": "/static/js/main.150b4c6e.chunk.js.map",
+  "static/js/1.9ceea6d5.chunk.js": "/static/js/1.9ceea6d5.chunk.js",
+  "static/js/1.9ceea6d5.chunk.js.map": "/static/js/1.9ceea6d5.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
+  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
+  "static/media/LoginBody.module.css": "/static/media/google-icon.29d446d5.svg",
+  "static/media/fonts.css": "/static/media/proxima_nova_regular.91c478ab.svg",
+  "static/css/main.305cd4ef.chunk.css.map": "/static/css/main.305cd4ef.chunk.css.map",
+  "index.html": "/index.html",
+  "precache-manifest.1c13af6e8a9e8818408f536f4b62b6e4.js": "/precache-manifest.1c13af6e8a9e8818408f536f4b62b6e4.js",
+  "service-worker.js": "/service-worker.js"
 }
