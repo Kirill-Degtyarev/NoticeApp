@@ -36,12 +36,12 @@ self.__precacheManifest = [
     "url": "./static/media/proxima_nova_semibold.5082ba8e.woff"
   },
   {
-    "revision": "df8c626474a73ab7a8b511655597c7c4",
-    "url": "./static/media/proxima_nova_semibold.df8c6264.ttf"
-  },
-  {
     "revision": "13ac2738feb0bee6658ff70771ab8998",
     "url": "./static/media/proxima_nova_regular.13ac2738.woff2"
+  },
+  {
+    "revision": "df8c626474a73ab7a8b511655597c7c4",
+    "url": "./static/media/proxima_nova_semibold.df8c6264.ttf"
   },
   {
     "revision": "61571ff74cc0fba6de49ace74846bfec",
