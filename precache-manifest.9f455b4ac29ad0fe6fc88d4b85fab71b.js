@@ -20,20 +20,20 @@ self.__precacheManifest = [
     "url": "./static/media/google-icon.29d446d5.svg"
   },
   {
-    "revision": "b7c512788e3c77b0196f0bace8a88418",
-    "url": "./static/media/proxima_nova_regular.b7c51278.eot"
+    "revision": "5fe650197a70462aa000e971c52a2562",
+    "url": "./static/media/proxima_nova_semibold.5fe65019.woff2"
   },
   {
     "revision": "cddac6589ca25eb44179341774222e79",
     "url": "./static/media/proxima_nova_semibold.cddac658.eot"
   },
   {
-    "revision": "5fe650197a70462aa000e971c52a2562",
-    "url": "./static/media/proxima_nova_semibold.5fe65019.woff2"
-  },
-  {
     "revision": "5082ba8e0c15946eb97e8394488c6d36",
     "url": "./static/media/proxima_nova_semibold.5082ba8e.woff"
+  },
+  {
+    "revision": "b7c512788e3c77b0196f0bace8a88418",
+    "url": "./static/media/proxima_nova_regular.b7c51278.eot"
   },
   {
     "revision": "13ac2738feb0bee6658ff70771ab8998",
