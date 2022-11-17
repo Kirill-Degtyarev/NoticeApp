@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "abf1d857083c8fa0f450",
+    "revision": "67342fd627b544b67334",
     "url": "./static/css/main.da9c9569.chunk.css"
   },
   {
-    "revision": "abf1d857083c8fa0f450",
-    "url": "./static/js/main.abf1d857.chunk.js"
+    "revision": "67342fd627b544b67334",
+    "url": "./static/js/main.67342fd6.chunk.js"
   },
   {
     "revision": "f77e75d979fae201fc6c",
@@ -24,28 +24,24 @@ self.__precacheManifest = [
     "url": "./static/media/plus.3d9f3c43.svg"
   },
   {
-    "revision": "b7c512788e3c77b0196f0bace8a88418",
-    "url": "./static/media/proxima_nova_regular.b7c51278.eot"
-  },
-  {
     "revision": "5fe650197a70462aa000e971c52a2562",
     "url": "./static/media/proxima_nova_semibold.5fe65019.woff2"
+  },
+  {
+    "revision": "b7c512788e3c77b0196f0bace8a88418",
+    "url": "./static/media/proxima_nova_regular.b7c51278.eot"
   },
   {
     "revision": "cddac6589ca25eb44179341774222e79",
     "url": "./static/media/proxima_nova_semibold.cddac658.eot"
   },
   {
-    "revision": "df8c626474a73ab7a8b511655597c7c4",
-    "url": "./static/media/proxima_nova_semibold.df8c6264.ttf"
-  },
-  {
     "revision": "5082ba8e0c15946eb97e8394488c6d36",
     "url": "./static/media/proxima_nova_semibold.5082ba8e.woff"
   },
   {
-    "revision": "3780411ec06c6e8b459605d8a5ea3a04",
-    "url": "./static/media/proxima_nova_semibold.3780411e.svg"
+    "revision": "df8c626474a73ab7a8b511655597c7c4",
+    "url": "./static/media/proxima_nova_semibold.df8c6264.ttf"
   },
   {
     "revision": "13ac2738feb0bee6658ff70771ab8998",
@@ -56,15 +52,19 @@ self.__precacheManifest = [
     "url": "./static/media/proxima_nova_regular.61571ff7.woff"
   },
   {
-    "revision": "91c478abc3c2b0ee83469d351b30393b",
-    "url": "./static/media/proxima_nova_regular.91c478ab.svg"
+    "revision": "3780411ec06c6e8b459605d8a5ea3a04",
+    "url": "./static/media/proxima_nova_semibold.3780411e.svg"
   },
   {
     "revision": "7ce6760d17685c466ba04d1b2c63c38b",
     "url": "./static/media/proxima_nova_regular.7ce6760d.ttf"
   },
   {
-    "revision": "45c6a08ad3dac1def793a98441183f11",
+    "revision": "91c478abc3c2b0ee83469d351b30393b",
+    "url": "./static/media/proxima_nova_regular.91c478ab.svg"
+  },
+  {
+    "revision": "43b211b505f410ef0d8a27d8306a6a7e",
     "url": "./index.html"
   }
 ];
