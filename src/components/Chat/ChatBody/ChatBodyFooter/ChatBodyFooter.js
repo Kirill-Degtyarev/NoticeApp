@@ -206,4 +206,5 @@ function ChatBodyFooter({ currentUser, chatKey, anchorScroll }) {
     </div>
   );
 }
+
 export default ChatBodyFooter;

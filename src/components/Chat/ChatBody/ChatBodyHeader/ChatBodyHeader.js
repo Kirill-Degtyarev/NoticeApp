@@ -47,4 +47,5 @@ function ChatBodyHeader({ userCompanion }) {
     </div>
   );
 }
+
 export default ChatBodyHeader;

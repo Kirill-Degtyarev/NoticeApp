@@ -1,56 +1,12 @@
 import React, { useState } from 'react';
 import { useAuth } from '../../Hooks/AuthHooks';
 import AvatarAction from '../../action/AvatarAction';
+import { MENU_ITEM } from '../../const/menu/menu_item';
 
 import styles from './menu.module.scss';
 
 import SvgGenerator from '../../svgGenerator/SvgGenerator';
 import MenuItem from './MenuItem';
-
-const MENU_ITEM = [
-  {
-    id: 'item_1',
-    title: 'home',
-    path: '/',
-    img_id: 'home',
-    img_class: 'img-home',
-  },
-  {
-    id: 'item_2',
-    title: 'chat',
-    path: '/chat',
-    img_id: 'chat',
-    img_class: 'img-chat',
-  },
-  {
-    id: 'item_3',
-    title: 'contact',
-    path: '/contact',
-    img_id: 'contact',
-    img_class: 'img-contact',
-  },
-  {
-    id: 'item_4',
-    title: 'notifications',
-    path: '/notifications',
-    img_id: 'notifications',
-    img_class: 'img-notifications',
-  },
-  {
-    id: 'item_5',
-    title: 'calendar',
-    path: '/calendar',
-    img_id: 'calendar',
-    img_class: 'img-calendar',
-  },
-  {
-    id: 'item_6',
-    title: 'settings',
-    path: '/settings',
-    img_id: 'settings',
-    img_class: 'img-settings',
-  },
-];
 
 const Menu = (props) => {
   const [changeAvatar, setChangeAvatar] = useState(false);
@@ -62,9 +18,11 @@ const Menu = (props) => {
   const uploadNewAvatar = (e) => {
     const fileImg = e.target.files;
     const fileReader = new FileReader();
+
     fileReader.onload = () => {
       setNewAvatarUrl(fileReader.result);
     };
+
     fileReader.readAsDataURL(fileImg[0]);
     setNewAvatar(fileImg[0]);
   };
@@ -72,6 +30,7 @@ const Menu = (props) => {
   const saveNewAvatar = async (e) => {
     if (newAvatar) {
       await AvatarAction.uploadProfileImage(newAvatar, currentUser);
+
       setNewAvatar(null);
     }
   };
