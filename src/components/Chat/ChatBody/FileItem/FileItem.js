@@ -10,22 +10,28 @@ const FileItem = ({ item, deleteAddFile }) => {
     const sizeMb = (size / 1024 / 1024).toFixed(0);
     const sizeGb = (size / 1024 / 1024 / 1024).toFixed(0);
     const sizeTb = (size / 1024 / 1024 / 1024 / 1024).toFixed(0);
+
     if (sizeB < 1024) {
       return sizeB + 'B';
     }
+
     if (sizeKb < 1024) {
       return sizeKb + 'Kb';
     }
+
     if (sizeMb < 1024) {
       return sizeMb + 'Mb';
     }
+
     if (sizeGb < 1024) {
       return sizeGb + 'Gb';
     }
+
     if (sizeTb < 1024) {
       return sizeTb + 'Gb';
     }
   };
+
   switch (item.fileType) {
     case 'image':
       return (
@@ -67,6 +73,7 @@ const FileItem = ({ item, deleteAddFile }) => {
         </div>
       );
 
+    //TODO
     // case "audio":
     //     return <div className={styles.audio__body}></div>;
 

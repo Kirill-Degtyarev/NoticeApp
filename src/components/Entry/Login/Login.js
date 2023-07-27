@@ -10,9 +10,9 @@ const Login = (props) => {
   const [userPassword, setUserPassword] = useState('');
 
   const loginUserHandler = async (e) => {
-    e.preventDefault();
-
     let password, email;
+
+    e.preventDefault();
 
     if (userEmail.trim().length > 0 && userEmail.includes('@')) {
       email = userEmail;

@@ -2,6 +2,7 @@ import React from 'react';
 import SvgGenerator from '../../../../svgGenerator/SvgGenerator';
 
 import styles from './AddFileButton.module.scss';
+
 const AddFileButton = (props) => {
   return (
     <label htmlFor={props.id}>

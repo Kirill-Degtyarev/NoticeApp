@@ -12,8 +12,9 @@ const Registration = (props) => {
   const [userConfirmPassword, setUserConfirmPassword] = useState('');
 
   const createUserHandler = async (e) => {
-    e.preventDefault();
     let password, email;
+
+    e.preventDefault();
 
     if (userEmail.trim().length > 0 && userEmail.includes('@')) {
       email = userEmail;
@@ -32,6 +33,7 @@ const Registration = (props) => {
     }
 
     await AuthAction.registeration(email, password, props.userLoged, userName);
+
     setUserName('');
     setUserEmail('');
     setUserPassword('');

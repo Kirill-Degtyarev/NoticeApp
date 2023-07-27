@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 
-import AuthAction from './action/AuthAction';
 import { useAuth } from './Hooks/AuthHooks';
+
+import AuthAction from './action/AuthAction';
+
 import AppBody from './components/AppBody/AppBody';
 import Home from './components/Home/Home';
 import Chat from './components/Chat/Chat';
@@ -31,6 +33,7 @@ function App() {
 
   useEffect(() => {
     const storedLoginInfo = localStorage.getItem('isLogedIn');
+
     if (storedLoginInfo === '1') {
       setUserLogeed(true);
     } else {
@@ -46,6 +49,7 @@ function App() {
 
   const logoutHandler = async () => {
     await AuthAction.logoutUser(false);
+
     localStorage.removeItem('isLogedIn');
     setUserLogeed(false);
     navigate('/login');
