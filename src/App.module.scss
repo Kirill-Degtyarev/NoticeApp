@@ -1,15 +1,18 @@
-.entry__container {
+.entry {
+  &__container {
     max-width: 2560px;
     flex: 1 1 auto;
-    /* min-height: 100vh; */
     padding: 10px 15px;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
 }
 
-.notice__container {
+.notice {
+  &__container {
     position: relative;
     flex: 1 1 auto;
     max-width: 2560px;
+  }
 }
