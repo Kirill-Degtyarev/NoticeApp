@@ -1,11 +1,19 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import MessagesConstr from '../MessagesConstr/MessagesConstr';
 import styles from './ChatBodyMessages.module.scss';
-function ChatBodyMessages({ messages, currentUserUid, userCompanion }) {
+
+function ChatBodyMessages({
+  messages,
+  currentUserUid,
+  userCompanion,
+  anchorScroll,
+}) {
   useEffect(() => {
-    const anchorChat = document.getElementById('anchor-scroll');
-    anchorChat.scrollIntoView({ behavior: 'auto', block: 'end' });
+    if (anchorScroll.current) {
+      anchorScroll.current.scrollIntoView({ behavior: 'auto', block: 'end' });
+    }
   }, [messages]);
+
   return (
     <div className={styles['chat-body']} id="chat-body">
       <div className={styles['chat-body__content']}>
@@ -31,7 +39,7 @@ function ChatBodyMessages({ messages, currentUserUid, userCompanion }) {
             No messages yet. Send your first message
           </h2>
         )}
-        <div id="anchor-scroll" className={styles['anchor-scroll']}></div>
+        <div ref={anchorScroll} className={styles['anchor-scroll']}></div>
       </div>
     </div>
   );

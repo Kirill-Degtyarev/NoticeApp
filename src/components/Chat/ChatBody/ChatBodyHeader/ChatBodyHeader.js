@@ -5,6 +5,7 @@ import AvatarAction from '../../../../action/AvatarAction.js';
 import SvgGenerator from '../../../../svgGenerator/SvgGenerator.js';
 
 import styles from './ChatBodyHeader.module.scss';
+
 function ChatBodyHeader({ userCompanion }) {
   return (
     <div className={styles['chat-header']}>
