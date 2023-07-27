@@ -5,8 +5,10 @@ import AuthAction from '../../../action/AuthAction';
 import SvgGenerator from '../../../svgGenerator/SvgGenerator';
 
 import styles from './Recovery.module.scss';
+
 const Recovery = (props) => {
   const [email, setEmail] = useState('');
+
   return (
     <section className={styles['page-recovery']}>
       <div className={styles.body__recovery}>

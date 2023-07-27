@@ -1,39 +1,29 @@
 .chatlist-chat {
-    background-color: #ffffff;
-    border-radius: 6px;
-    box-shadow: 0px 3px 3px 1px rgb(0 0 0 / 5%);
-    padding: 35px 30px 32px 30px;
-    cursor: pointer;
-    display: flex;
-    min-width: 100%;
-    flex-direction: column;
-    transition: 0.3s ease all;
-    position: relative;
-    -webkit-user-select: none;
-    user-select: none;
-    -webkit-user-drag: none;
-}
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0px 3px 3px 1px rgb(0 0 0 / 5%);
+  padding: 35px 30px 32px 30px;
+  cursor: pointer;
+  display: flex;
+  min-width: 100%;
+  flex-direction: column;
+  transition: 0.3s ease all;
+  position: relative;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
 
-.chatlist-chat:hover {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &:hover {
     transform: scale(0.99);
     background-color: #bbbbbb88;
-}
+  }
 
-.chatlist-active::after {
-    opacity: 1 !important;
-    animation: bgActive 0.3s 1;
-}
-
-.chatlist-active span {
-    color: #fafafa;
-}
-
-.chatlist-active .chats-info__content div {
-    color: #fafafa;
-}
-
-.chatlist-chat::after {
-    content: "";
+  &::after {
+    content: '';
     position: absolute;
     width: 100%;
     height: 100%;
@@ -46,51 +36,63 @@
     background-color: #5fabf3;
     opacity: 0;
     transition: opacity 0.5s;
-}
+  }
 
-@keyframes bgActive {
-    0% {
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-    }
-
-    100% {
-        width: 100%;
-        height: 100%;
-        border-radius: 8px;
-    }
-}
-
-.chatlist-chat__body {
+  &__body {
     position: relative;
     z-index: 2;
-}
-.chatlist-chat:not(:last-child) {
-    margin-bottom: 20px;
-}
+  }
 
-.chatlist-chat__header {
+  &__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
 }
 
-.chatlist-chat__header:not(:last-child) {
-    margin-bottom: 20px;
+.chatlist-active {
+  &::after {
+    opacity: 1 !important;
+    animation: bgActive 0.3s 1;
+  }
+
+  span {
+    color: #fafafa;
+  }
+
+  .chats-info__content div {
+    color: #fafafa;
+  }
+}
+
+@keyframes bgActive {
+  0% {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+
+  100% {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
 }
 
 .chat-userinfo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .chat-avatar {
-    position: relative;
-    margin-right: 20px;
-}
+  position: relative;
+  margin-right: 20px;
 
-.chat-avatar__online {
+  &__online {
     position: absolute;
     display: block;
     top: 3px;
@@ -100,45 +102,45 @@
     width: 10px;
     height: 10px;
     border: 1.5px solid #ffffff;
+  }
 }
 
-.chat-avatar__img {
-}
-
-.chat-avatar__img img {
-    border-radius: 50%;
-    width: 54px;
-    height: 54px;
+.chat-avatar {
+  &__img {
+    img {
+      border-radius: 50%;
+      width: 54px;
+      height: 54px;
+    }
+  }
 }
 
 .chat-avatarName {
-    width: 54px;
-    height: 54px;
-    background: linear-gradient(325.78deg, #2a8bf2 14.76%, #7cb8f7 87.3%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border-radius: 50%;
-    color: #ffffff;
-    font-weight: 500;
-    font-size: 20px;
-    user-select: none;
-    text-transform: uppercase;
+  width: 54px;
+  height: 54px;
+  background: linear-gradient(325.78deg, #2a8bf2 14.76%, #7cb8f7 87.3%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 20px;
+  user-select: none;
+  text-transform: uppercase;
 }
 
 .chat-info {
-}
-
-.chat-info__username {
+  &__username {
     font-size: 18px;
     line-height: 117%;
     text-transform: capitalize;
     color: #0d1c2e;
     font-weight: 600;
-}
+  }
 
-.chat-info__actions {
+  &__actions {
     font-size: 16px;
     line-height: 119%;
     text-transform: lowercase;
@@ -147,73 +149,87 @@
     user-select: none;
     -webkit-user-drag: none;
     transition: 0.3s ease all;
+  }
 }
 
 .action {
-}
-
-.action-img {
+  &-img {
     margin-right: 5px;
     display: flex;
     align-items: center;
     align-content: center;
     justify-content: center;
-}
+  }
 
-.action-title {
+  &-title {
     font-size: 16px;
     line-height: 119%;
     text-transform: lowercase;
     color: #2a8bf2;
+  }
 }
 
 .last-messages {
-    font-size: 16px;
-    line-height: 119%;
-    text-transform: lowercase;
-    color: #707c97;
-    transition: 0.3s ease all;
+  font-size: 16px;
+  line-height: 119%;
+  text-transform: lowercase;
+  color: #707c97;
+  transition: 0.3s ease all;
 }
 
 .message-file {
-    display: flex;
-    align-items: center;
-    margin-top: 13px;
+  display: flex;
+  align-items: center;
+  margin-top: 13px;
 }
 
 @media (max-width: 1440px) {
-    .chatlist-chat {
-        padding: 20px 15px;
-    }
-    .chat-avatar__online {
-        top: 1px;
-        left: 1px;
+  .chatlist-chat {
+    padding: 20px 15px;
+  }
+
+  .chat-avatar {
+    &__online {
+      top: 1px;
+      left: 1px;
     }
 
-    .chat-avatar__img img {
+    &__img {
+      img {
         width: 40px;
         height: 40px;
+      }
     }
-    .chat-avatarName {
-        width: 40px;
-        height: 40px;
-    }
+  }
+
+  .chat-avatarName {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 @media (max-width: 425px) {
-    .chatlist-chat {
-        padding: 10px;
+  .chatlist-chat {
+    padding: 10px;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
     }
-    .chatlist-chat:not(:last-child) {
+
+    &__header {
+      &:not(:last-child) {
         margin-bottom: 10px;
+      }
     }
-    .chatlist-chat__header:not(:last-child) {
-        margin-bottom: 10px;
+  }
+
+  .chat-info {
+    &__username {
+      font-size: 16px;
     }
-    .chat-info__username {
-        font-size: 16px;
-    }
-    .chat-avatar {
-        margin-right: 10px;
-    }
+  }
+
+  .chat-avatar {
+    margin-right: 10px;
+  }
 }

@@ -9,7 +9,7 @@ import { ADD_BUTTON } from '../../../../const/Chat/action_button';
 
 import styles from './ChatBodyFooter.module.scss';
 
-function ChatBodyFooter({ currentUser, chatKey }) {
+function ChatBodyFooter({ currentUser, chatKey, anchorScroll }) {
   // eslint-disable-next-line
   const [chosenEmoji, setChosenEmoji] = useState(null);
   const [showAddFile, setShowAddFile] = useState(false);
@@ -51,7 +51,6 @@ function ChatBodyFooter({ currentUser, chatKey }) {
   };
 
   const sendMessage = async () => {
-    const anchorChat = document.getElementById('anchor-scroll');
     let content = [];
 
     if (addFile.length === 0) {
@@ -72,7 +71,10 @@ function ChatBodyFooter({ currentUser, chatKey }) {
           currentUser.uid
         );
 
-        anchorChat.scrollIntoView({ behavior: 'smooth', block: 'end' });
+        anchorScroll.current?.scrollIntoView({
+          behavior: 'smooth',
+          block: 'end',
+        });
       } else {
         messageInput.innerText = '';
         messageInput.dataset.placeholder = "Сan't send empty message";
@@ -100,7 +102,10 @@ function ChatBodyFooter({ currentUser, chatKey }) {
 
       setShowAddFile(false);
       setAddButton(ADD_BUTTON);
-      anchorChat.scrollIntoView({ behavior: 'smooth', block: 'end' });
+      anchorScroll.current?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'end',
+      });
     }
   };
 
@@ -201,4 +206,5 @@ function ChatBodyFooter({ currentUser, chatKey }) {
     </div>
   );
 }
+
 export default ChatBodyFooter;

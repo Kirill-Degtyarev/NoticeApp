@@ -7,7 +7,7 @@ import App from './App';
 import './config/configFirebase';
 
 import './styles/index.scss';
-import './styles/nullstyle.scss';
+import './styles/_normalize.scss';
 import './fonts/fonts.scss';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

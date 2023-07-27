@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import SvgGenerator from '../../../../../svgGenerator/SvgGenerator';
 
 import styles from './VideoComponent.module.scss';
+
 const VideoComponent = ({ id, src }) => {
   const [videoPlayed, setVideoPlayed] = useState(false);
   const [soundMuted, setSoundMuted] = useState(true);
@@ -10,6 +11,7 @@ const VideoComponent = ({ id, src }) => {
 
   const playVideo = (id) => {
     const video = document.getElementById(`${id}`);
+
     if (video.paused) {
       setVideoPlayed(true);
       video.play();
@@ -26,25 +28,31 @@ const VideoComponent = ({ id, src }) => {
       m = Math.floor(dm / 60),
       ds = dm % 60,
       s = Math.ceil(ds);
+
     if (s === 60) {
       s = 0;
       m = m + 1;
     }
+
     if (s < 10) {
       s = '0' + s;
     }
+
     if (m === 60) {
       m = 0;
       h = h + 1;
     }
+
     if (m < 10) {
       m = '0' + m;
     }
+
     if (h === 0) {
       currentTime = m + ':' + s;
     } else {
       currentTime = h + ':' + m + ':' + s;
     }
+
     return currentTime;
   };
 

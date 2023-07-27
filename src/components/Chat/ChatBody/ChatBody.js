@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { useParams } from 'react-router-dom';
 import { useAuth } from '../../../Hooks/AuthHooks';
 
@@ -16,6 +16,7 @@ const ChatBody = (props) => {
   const [chat, setChat] = useState(null);
   const params = useParams();
   const currentUser = useAuth();
+  const anchorScroll = useRef(null);
 
   useEffect(() => {
     if (params.id) {
@@ -42,8 +43,13 @@ const ChatBody = (props) => {
             messages={chat.messages}
             currentUserUid={currentUser.uid}
             userCompanion={userCompanion[0]}
+            anchorScroll={anchorScroll}
           />
-          <ChatBodyFooter currentUser={currentUser} chatKey={chat.key} />
+          <ChatBodyFooter
+            currentUser={currentUser}
+            chatKey={chat.key}
+            anchorScroll={anchorScroll}
+          />
         </>
       )}
     </div>

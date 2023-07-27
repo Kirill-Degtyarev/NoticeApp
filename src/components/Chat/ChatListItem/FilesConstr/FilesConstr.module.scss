@@ -1,73 +1,72 @@
 .messages-files {
-    padding: 10px 14px 10px 13px;
-    background: rgba(17, 44, 73, 0.25);
-    border-radius: 20px;
-}
+  padding: 10px 14px 10px 13px;
+  background: rgba(17, 44, 73, 0.25);
+  border-radius: 20px;
 
-.messages-files:not(:last-child) {
+  &:not(:last-child) {
     margin-right: 20px;
+  }
 }
 
 .files-docs {
-    display: flex;
-    align-items: center;
-}
+  display: flex;
+  align-items: center;
 
-.files-docs__img {
-    margin-right: 5px;
-}
-
-.files-docs__title {
+  &__title {
     font-size: 14px;
     line-height: 186%;
     font-weight: 600;
     text-transform: capitalize;
     margin-right: 3px;
-}
+  }
 
-.files-docs__count {
+  &__count {
     font-size: 14px;
     line-height: 186%;
     font-weight: 600;
+  }
+
+  &__img {
+    margin-right: 5px;
+  }
 }
 
 .document {
-    background: rgba(42, 139, 242, 0.25) !important;
-}
+  background: rgba(42, 139, 242, 0.25) !important;
 
-.document div div {
-    padding: 1.67px 3.33px;
-}
+  div {
+    div {
+      padding: 1.67px 3.33px;
+    }
 
-.document div h2 {
-    color: #2a8bf2;
-}
-
-.document div span {
-    color: #2a8bf2;
+    h2,
+    span {
+      color: #2a8bf2;
+    }
+  }
 }
 
 .image {
-    background: rgba(255, 51, 102, 0.25) !important;
-}
+  background: rgba(255, 51, 102, 0.25) !important;
 
-.image div div {
-    padding: 2.5px;
-}
+  div {
+    div {
+      padding: 2.5px;
+    }
 
-.image div h2 {
-    color: #ff3366;
-}
-
-.image div span {
-    color: #ff3366;
+    h2,
+    span {
+      color: #ff3366;
+    }
+  }
 }
 
 @media (max-width: 1440px) {
-    .messages-files {
-        padding: 5px 7px 5px 6.5px;
+  .messages-files {
+    padding: 5px 7px 5px 6.5px;
+
+    &:not(:last-child) {
+      margin-right: 10px;
     }
-    .messages-files:not(:last-child) {
-        margin-right: 10px;
-    }
+  }
 }

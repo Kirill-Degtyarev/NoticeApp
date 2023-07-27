@@ -1,13 +1,14 @@
-.title__body {
+.title {
+  font-size: 40px;
+  color: #2a8bf2;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  max-width: 500px;
+
+  &__body {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
-}
-.title {
-    font-size: 40px;
-    color: #2a8bf2;
-    font-weight: 600;
-    letter-spacing: 0.1rem;
-    max-width: 500px;
+  }
 }

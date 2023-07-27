@@ -9,6 +9,7 @@ import styles from './AppBody.module.scss';
 
 const AppBody = (props) => {
   const currentUser = useAuth();
+
   return (
     <div
       className={currentUser ? styles['page-app'] : styles['container-loader']}
